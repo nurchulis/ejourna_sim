@@ -134,7 +134,9 @@
                       <li><a href="../pasca" target="blank">PASCASARJANA</a></li>
   </ul>
   </li>
-                  <li><a href="http://localhost/ejournal/event"><span class="icon-flower"></span> EVENTS</a></li>
+
+                  <li><a href="http://localhost/ejourna_sim/event"><span class="icon-flower"></span> EVENTS</a></li>
+                  <li><a href="http://localhost/ejourna_sim?page=publish"><span class="icon-flower"></span> PUBLISH</a></li>
                </ul>
             </div>
             <!--/.nav-collapse -->
@@ -145,25 +147,26 @@
 
 
 <div class="container-fluid" style="margin-bottom: 100px;">
+
 <div class="col-md-12" style="padding: 0px; height: 300px;">
 <body>
 <div class="container">
-  <div id="myCarousel" class="carousel slide" data-ride="carousel">
-      <div class="carousel-inner" id="event-wrapper2">    
-    </div>
-    <ul class="list-group col-sm-4" id="event-wrapper4">    
-    </ul>
+    
+ <?php
+@$page=$_GET['page'];
 
-      <!-- Controls -->
-      <div class="carousel-controls">
-          <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left"></span>
-          </a>
-          <a class="right carousel-control" href="#myCarousel" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right"></span>
-          </a>
-      </div>
-  </div>       
+switch ($page) {
+  
+  case "publish":
+  include "Home/Publish.php";
+    break;
+  
+  default:
+    include "Home/Slide.php";    
+    break;
+}
+
+ ?>
 </div>
           <div id="event-wrapper" style="display: none" style="position: relative;">
           <div id="spinner"><img src="./grab/images/spin.gif"></div>
@@ -299,57 +302,20 @@ $(window).load(function() {
   
 <div class="container" style="color:rgb(119, 119, 119); margin-bottom: 50px;">
   
-  <?php 
-include "config/config.php";
-$catagories = mysqli_query($mysqli, "SELECT * FROM kategori ORDER BY urut ASC");
-$journal = mysqli_query($mysqli, "SELECT * FROM journal ORDER BY urut ASC");
+ <?php
+@$page=$_GET['page'];
 
-foreach($catagories as $key=>$val){
-    ?>
-     <img class="d-flex align-self-center mr-3" src="assets/img/Kategori/<?php echo $val['foto_kategori'] ?>" width="50px" height="50px;" id="star" style="margin: 0px;" alt="Generic placeholder image">
-        <h2 style="margin: 4px; padding: 0px; font-family: 'Cinzel-Bold'; font-weight:600 !important;"><?php echo $val['nama_kategori']; ?></h2>
-       
-        <hr>
-         <div class="row">
-<?php
-     foreach ($journal as $key => $tampil) {
-          if ($val['id_kategori'] === $tampil['kategori_journal']){
-        ?>
-        <div class="col-xs-6 col-sm-3 col-md-2">
-               <div class="thumbnail hvr-glow hvr-fade">
-                <a href="<?php echo $tampil['link_journal'] ?>" target="blank" style="text-decoration: none">
-                  <img src="https://media1.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy-preview.gif" alt="Photo" style="height: 200px; margin-bottom:0" data-echo="http://localhost/ejournal/assets/img/jurnal/<?php echo $tampil['foto_journal'] ?>">
-                  <div class="caption">
-                     <h5><?php echo $tampil['nama_journal'] ?></h5>
-                     
-                  </div>
-                  </a>
-               </div>
-            </div>
-          
-        <?php 
-          }
-          
-       
-     }
-     ?>
-   </div>
-     <?php
-
-
+switch ($page) {
+  
+  case "publish":
+    break;
+  
+  default:
+    include "Home/Home.php";    
+    break;
 }
 
-
-
-
-
-?>
-
-
-       
-
-        
-  
+ ?>
           
           
 
