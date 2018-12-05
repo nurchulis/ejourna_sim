@@ -203,7 +203,7 @@
         
             $('#event-wrapper2').append(
         '<div class="item">' +
-            '<img style="width:760px;height: 300px;object-fit: cover; object-position: 60%  1%" src="http://localhost/ejournal/'+ coba +'">' +
+            '<img style="width:760px;height: 300px;object-fit: cover; object-position: 60%  1%" src="http://localhost/ejourna_sim/'+ coba +'">' +
            '<div class="carousel-caption">' +
                       '<a href="'+ item.settings.url +'" target="blank">' +
             '<h4 style="color:white"><b>'+ item.settings.title +'</b></h4></a>' +
@@ -301,8 +301,8 @@ $(window).load(function() {
   
   <?php 
 include "config/config.php";
-$catagories = mysqli_query($mysqli, "SELECT * FROM kategori");
-$journal = mysqli_query($mysqli, "SELECT * FROM journal");
+$catagories = mysqli_query($mysqli, "SELECT * FROM kategori ORDER BY urut ASC");
+$journal = mysqli_query($mysqli, "SELECT * FROM journal ORDER BY urut ASC");
 
 foreach($catagories as $key=>$val){
     ?>
