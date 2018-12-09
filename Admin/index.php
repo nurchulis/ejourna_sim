@@ -32,6 +32,9 @@ switch ($ambil) {
 	case 'Publisher_list':
 	include 'Publisher_list.php';
 			break;	
+	case 'Request_rejected':
+	include 'Request_rejected.php';
+		break;
 
 	default:
 include "Homeadmin.php";

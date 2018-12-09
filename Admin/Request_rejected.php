@@ -1,7 +1,7 @@
  <div class="card" style="background-color: #F1F2F7; ">
 
                                 <div class="card-header" style="background-color: white">
-                                    <li class="fa fa-align-justify"></li><strong>  Request List Journal </strong>
+                                    <li class="fa fa-align-justify"></li><strong> Request Rejected Journal </strong>
                                     <small>
                                         You can edit or add categories here.
                                     </small>
@@ -12,7 +12,7 @@
 
 	<?php
 include "../config/config.php";
-$journal = mysqli_query($mysqli, "SELECT * FROM journal,publisher where journal.id_publisher=publisher.id_publisher AND status = 0 "); 
+$journal = mysqli_query($mysqli, "SELECT * FROM journal,publisher where journal.id_publisher=publisher.id_publisher AND status = 2 "); 
    
   $cek = mysqli_num_rows($journal);
   if($cek>0){
@@ -39,7 +39,7 @@ $journal = mysqli_query($mysqli, "SELECT * FROM journal,publisher where journal.
   		<?php 
   		if($val['status'] == 2){
   			?>
-  			<button class="btn btn-success" type="submit" name="status" value="1">Di Publish</button>
+  			<button class="btn btn-success" type="submit" name="status" value="1">Publish Now</button>
 
   			<?php
   		}else {

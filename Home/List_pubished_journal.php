@@ -17,7 +17,7 @@ $journal = mysqli_query($mysqli, "SELECT * FROM journal where id_publisher='".$i
  
       <div class="col-md-2">
                <div class="thumbnail hvr-glow hvr-fade">
-                <a href="<?php echo $tampil['link_journal'] ?>" target="blank" style="text-decoration: none">
+                <a data-toggle="modal" style="float: right;" data-target="#modals<?php echo $val['id_journal'] ?>" style="text-decoration: none">
                   <img src="https://media1.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy-preview.gif" alt="Photo" style="height: 150px; margin-bottom:0" data-echo="http://localhost/ejourna_sim/assets/img/jurnal/<?php echo $val['foto_journal'] ?>">
                   <div class="caption">
                      <h5><?php echo $val['nama_journal'] ?></h5>
@@ -25,12 +25,45 @@ $journal = mysqli_query($mysqli, "SELECT * FROM journal where id_publisher='".$i
                   </a>
                   <?php if($val['status']=='1'){ ?>
                    <span class="label label-success">Terposting</span>
-                  <?php } else { ?>
-                    <span class="label label-danger">Proses Review</span> 
+                  <?php }else if($val['status']=='2') { ?>
+                    <span class="label label-danger">Ditolak</span> 
+                  <?php }else { ?>
+                    <span class="label label-warning">Di review</span> 
                   <?php } ?>  
                </div>
 
             </div>
+
+                <div class="modal fade" id="modals<?php echo $val['id_journal'] ?>" >
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body">
+   <form method="POST" action="Home/Proses/Update_journal.php" enctype="multipart/form-data">
+        <input type="hidden" name="id_publisher" value="<?php echo $_SESSION['id_publisher']; ?>">
+        <input type="hidden" name="urut" value="<?php echo $val['urut']; ?>">
+         <input type="hidden" name="id_journal" value="<?php echo $val['id_journal'] ?>"> 
+         <input type="hidden" name="status" value="<?php echo $val['status'] ?>">
+     <div class="form-group"><label for="company" class=" form-control-label"></label><input type="text" name="nama_journal" value="<?php echo $val['nama_journal'] ?>" id="company" placeholder="Nama Journal" class="form-control" required></div>
+        <div class="form-group"><label for="company" class=" form-control-label"></label><input type="text" name="link_journal" value="<?php echo $val['link_journal'] ?>" id="company" placeholder="Nama Journal" class="form-control" required></div>
+        <div class="form-group"><label for="company" class=" form-control-label"></label><input type="text" name="label" value="<?php echo $val['label'] ?>" id="company" placeholder="Nama Journal" class="form-control" required></div>
+        </div>
+          <div class="form-group"><label for="company" class=" form-control-label"></label><input type="file" name="file" value="<?php echo $val['link_journal'] ?>" id="company" placeholder="Nama Journal" class="form-control" ></div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-success" >Simpan</button>
+        </div>
+      </div>
+      </form>
+    </div>
+  </div>
+
+
+
 
 <?php }
 }else {
@@ -51,15 +84,16 @@ $journal = mysqli_query($mysqli, "SELECT * FROM journal where id_publisher='".$i
                             </div>
                             <div class="modal-body">
                             <center>
-                            <form method="POST" action="Proses/Upload_journal.php" type="multipart/form-data">
+                            <form method="POST" action="Home/Proses/Upload_journal.php" enctype="multipart/form-data">
                             </center>
                             <br/>
                             <center>
+                              <input type="hidden" name="id_publisher" value="<?php echo $_SESSION['id_publisher']; ?>">
                             <div class="form-group"><label for="company" class=" form-control-label"></label><input type="text" name="nama_journal" id="company" placeholder="Nama Journal" class="form-control" required></div>
                             
                             <div class="form-group"><label for="company" class=" form-control-label"></label><input type="text" name="link_journal" id="company" placeholder="Link Journal" class="form-control" required></div>
                           
-                            <div class="form-group"><label for="company" class=" form-control-label"></label><input type="file" name="foto_journal" id="company" placeholder="Cover" class="form-control" required></div>
+                            <div class="form-group"><label for="company" class=" form-control-label"></label><input type="file" name="file" id="company" placeholder="Cover" class="form-control" required></div>
                             </center>
 
                             <div class="form-group"><label for="company" class=" form-control-label"></label><input type="text" name="label" id="company" placeholder="Label" class="form-control" required></div>

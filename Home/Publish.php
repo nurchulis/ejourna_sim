@@ -193,7 +193,7 @@ if(($_SESSION['status'] !="login")){
             include "Data_statistik.php";
             break;
           case 'logout':
-             include "Proses/Logout.php";
+             include "Logout.php";
               break;  
             
           default:

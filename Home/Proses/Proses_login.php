@@ -19,7 +19,7 @@ if($cek > 0){
 
 	header("location:../../?page=publish");
 }else{
-	//header("location:index.php");	
+	header("location:index.php");	
 }
 
 ?>

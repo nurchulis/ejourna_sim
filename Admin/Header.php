@@ -76,7 +76,9 @@
                       <li class="menu-item">
                         <a href="?page=Request_list" class="dropdown-toggle" > <i class="menu-icon fa fa-book"></i>Request Published</a>
                     </li>
-                    
+                    <li class="menu-item">
+                        <a href="?page=Request_rejected" class="dropdown-toggle" > <i class="menu-icon fa fa-book"></i>Request rejected</a>
+                    </li>
 
                     <h3 class="menu-title">Settings</h3><!-- /.menu-title -->
                     <li class="menu-item">
