@@ -147,7 +147,7 @@ if(($_SESSION['status'] !="login")){
               <i class="glyphicon glyphicon-home" ></i>
               Journal Published </a>
             </li>
-            <li <?php 
+         <!--   <li <?php 
        @$ini=$_GET['ambil'];
         if($ini=='data_statistik'){
          echo 'class="active"';
@@ -156,7 +156,7 @@ if(($_SESSION['status'] !="login")){
               <a href="?page=publish&ambil=data_statistik">
               <i class="glyphicon glyphicon-user"></i>
               Data Statistik </a>
-            </li>
+            </li> !-->
             <li <?php 
        @$ini=$_GET['ambil'];
         if($ini=='pengaturan'){
