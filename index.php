@@ -99,7 +99,7 @@ session_start();
       <div class="container">
          <div class="row header-bar">
             <div class="col-md-4 col-sm-6 col-xs-12">
-               <div class="header-image"><img src="http://localhost/ejournal/assets/img/logo.png"></div>
+               <div class="header-image"><img src="assets/img/logo.png"></div>
             </div>
             <div class="col-md-2 hidden-sm hidden-xs"></div>
             <div class="col-md-2 hidden-sm hidden-xs"></div>
@@ -242,7 +242,7 @@ switch ($page) {
 
 
               $('img').error(function(){
-        $(this).attr('src', 'http://localhost/ejournal/assets/img/not_found.png');
+        $(this).attr('src', 'assets/img/not_found.png');
         });
 
           });
@@ -355,7 +355,7 @@ switch ($page) {
         <div class="container">
             <div class="col-md-3">
               <div>
-                <a href="http://uin-suka.ac.id"><img src="http://localhost/ejournal/assets/img/logo-white.png" class="footer-logo"></a>
+                <a href="http://uin-suka.ac.id"><img src="assets/img/logo-white.png" class="footer-logo"></a>
               </div>
             </div>
             <div class="col-md-6">
@@ -376,12 +376,12 @@ switch ($page) {
             </div> -->
             <div class="col-md-3">
               <div class="footer-link">
-                <a href="https://plus.google.com/108019994213770776584" target="blank"><img src="http://localhost/ejournal/assets/img/gplus.png" class="button-soc"></a>
-                <a href="https://www.facebook.com/UINSK" target="blank"><img src="http://localhost/ejournal/assets/img/fb.png" class="button-soc"></a>
-                <a href="https://twitter.com/uinsk" target="blank"><img src="http://localhost/ejournal/assets/img/twitter.png" class="button-soc"></a>
-                <a href="https://www.youtube.com/user/UINSK" target="blank"><img src="http://localhost/ejournal/assets/img/youtube.png" class="button-soc"></a>
-                <a href="https://www.instagram.com/uinsk" target="blank"><img src="http://localhost/ejournal/assets/img/instagram.png" class="button-soc"></a>
-                <a href="https://foursquare.com/uinsk" target="blank"><img src="http://localhost/ejournal/assets/img/foursquare.png" class="button-soc"></a>
+                <a href="https://plus.google.com/108019994213770776584" target="blank"><img src="assets/img/gplus.png" class="button-soc"></a>
+                <a href="https://www.facebook.com/UINSK" target="blank"><img src="assets/img/fb.png" class="button-soc"></a>
+                <a href="https://twitter.com/uinsk" target="blank"><img src="assets/img/twitter.png" class="button-soc"></a>
+                <a href="https://www.youtube.com/user/UINSK" target="blank"><img src="assets/img/youtube.png" class="button-soc"></a>
+                <a href="https://www.instagram.com/uinsk" target="blank"><img src="assets/img/instagram.png" class="button-soc"></a>
+                <a href="https://foursquare.com/uinsk" target="blank"><img src="assets/img/foursquare.png" class="button-soc"></a>
               </div>
             </div>
           </div>

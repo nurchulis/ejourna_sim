@@ -17,7 +17,7 @@ foreach($catagories as $key=>$val){
         <div class="col-xs-6 col-sm-3 col-md-2">
                <div class="thumbnail hvr-glow hvr-fade">
                 <a href="<?php echo $tampil['link_journal'] ?>" target="blank" style="text-decoration: none">
-                  <img src="https://media1.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy-preview.gif" alt="Photo" style="height: 200px; margin-bottom:0" data-echo="http://localhost/ejournal/assets/img/jurnal/<?php echo $tampil['foto_journal'] ?>">
+                  <img src="https://media1.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy-preview.gif" alt="Photo" style="height: 200px; margin-bottom:0" data-echo="assets/img/jurnal/<?php echo $tampil['foto_journal'] ?>">
                   <div class="caption">
                      <h5><?php echo $tampil['nama_journal'] ?></h5>
                   </div>
