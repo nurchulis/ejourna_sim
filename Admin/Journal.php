@@ -13,7 +13,7 @@ Journal By val </strong>
 <?php 
 include "../config/config.php";
 $catagories = mysqli_query($mysqli, "SELECT * FROM kategori ORDER BY urut ASC");
-$journal = mysqli_query($mysqli, "SELECT * FROM journal ORDER BY urut ASC");
+$journal = mysqli_query($mysqli, "SELECT * FROM journal WHERE status=1 ORDER BY urut ASC");
     foreach ($catagories as $key=>$val)
         {
 ?>

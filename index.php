@@ -1,3 +1,7 @@
+<?php 
+ob_start(); // Dengan Menambahkan ob_start(), Warning Session bisa Fix
+session_start();
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -137,6 +141,12 @@
 
                   <li><a href="http://localhost/ejourna_sim/event"><span class="icon-flower"></span> EVENTS</a></li>
                   <li><a href="http://localhost/ejourna_sim?page=publish"><span class="icon-flower"></span> PUBLISH</a></li>
+                  <?php
+                    if((@$_SESSION['status'] =="login")){
+                     echo "<li><a href='Home/Proses/Logout.php'><span class='icon-flower'></span>LOGOUT(". $_SESSION['username'].")</a></li>";
+                    }
+                  ?>
+                  
                </ul>
             </div>
             <!--/.nav-collapse -->
@@ -161,6 +171,14 @@ switch ($page) {
   include "Home/Publish.php";
     break;
   
+  case 'HomePublisher':
+    include "Home/HomePublisher.php";
+    break;
+  case 'Login':
+    include "Home/Login.php";
+    break;
+  
+
   default:
     include "Home/Slide.php";    
     break;
@@ -294,8 +312,7 @@ $(window).load(function() {
 });
 
 </script>
-   </body>
-</html></div>
+</div>
 
 </div>
 
@@ -309,7 +326,12 @@ switch ($page) {
   
   case "publish":
     break;
-  
+    
+  case 'Login':
+      break;  
+    case 'HomePublisher':
+    break;
+
   default:
     include "Home/Home.php";    
     break;

@@ -73,17 +73,22 @@
                     <li class="menu-item">
                         <a href="?page=journal" class="dropdown-toggle" > <i class="menu-icon fa fa-book"></i>Data</a>
                     </li>
+                      <li class="menu-item">
+                        <a href="?page=Request_list" class="dropdown-toggle" > <i class="menu-icon fa fa-book"></i>Request Published</a>
+                    </li>
                     
 
                     <h3 class="menu-title">Settings</h3><!-- /.menu-title -->
-
                     <li class="menu-item">
-                        <a href="Admin/Manager" class="dropdown-toggle"> <i class="menu-icon fa fa-tasks"></i>User</a>
+                        <a href="?page=Publisher_list" class="dropdown-toggle"> <i class="menu-icon fa fa-tasks"></i>Publisher Manager</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="?page=Manager_user" class="dropdown-toggle"> <i class="menu-icon fa fa-tasks"></i>Pengaturan</a>
                     </li>
                   
                     <h3 class="menu-title"></h3><!-- /.menu-title -->
                     <li class="menu-item">
-                        <a href="../Login/logout"> <i class="menu-icon fa fa-sign-out"></i>Logout</a>
+                        <a href="?page=Logout"> <i class="menu-icon fa fa-sign-out"></i>Logout</a>
                         
                     </li>
                 </ul>

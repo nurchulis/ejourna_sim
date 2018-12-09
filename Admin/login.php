@@ -40,7 +40,7 @@
                 </div>
                 <div class="login-form">
                         
-                    <form method="post" action="http://localhost/ejournal/Login/aksi_login">
+                    <form method="post" action="aksi_login.php">
                     <center style="color: #555">
                       <a href="#">
                         <img class="align-content" src="../assets/Admin/img/logo-uin.png" alt="" width="40px">
