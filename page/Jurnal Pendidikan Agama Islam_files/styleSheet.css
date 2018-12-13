@@ -1,0 +1,472 @@
+/*
+* Custom CSS For JPI Journal
+* Version : 1.0.1
+* 
+*/
+
+/*"Indexed by" thumbnail images*/
+.img-indexby {
+	height: 57px !important;
+    margin: 5px;
+    padding: 5px;
+    border: solid 1px #dddddd;
+    margin-bottom: -20px;
+}
+.img-indexby:hover {
+  -webkit-box-shadow: 0px 0px 5px 3px rgba(255,148,33,1);
+  -moz-box-shadow: 0px 0px 5px 3px rgba(255,148,33,1);
+  box-shadow: 0px 0px 5px 3px rgba(255,148,33,1);
+}
+
+/*Sidebar Link colors*/
+.sidebar-link{
+	color: 	#666666;
+}
+.sidebar-link:hover{
+	color: #007ab2;
+}
+
+/*Sidebar Link's title*/
+.sidebar-link-title{
+	color: #666666;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: solid 1px #ddd;
+    padding-bottom: 10px;
+}
+
+/*Sidebar box*/
+.sidebar-box{
+    background-color: #f7f8d4;
+    padding: 20px;
+    border: solid 1px #dddddd;	
+}
+.sidebar-box-issn{
+    background-color: #ffffff;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    color: #ab4242;
+    margin-bottom: 15px;
+    border: solid 1px #dddddd;
+}
+.sidebar-box-white{
+	background-color: #f5f1aa;
+	border-radius: 5px;
+	padding:10px;	
+	color: #666666;
+	font-size: 9px;
+}
+.sidebar-box-text-desc{
+	line-height: 18px !important;
+	font-size: 11px;
+}
+.sidebar-box-title{
+	color: #666666;
+	font-weight: bold;
+	text-align: center;
+}
+
+/*Override nav menu from head.less*/
+.has_site_logo .pkp_head_wrapper {
+	width: 100% !important;
+}
+.pkp_block .block_custom {
+	margin-top: -30px !important;
+} 
+.pkp_block a {
+    text-decoration: none;
+    padding: 0px;
+}
+.pkp_block a {
+	text-decoration: none
+}
+@media (min-width: 992px) {
+	.pkp_block {
+		padding: 5px 20px;
+	}
+}
+/*Footer Link*/
+.jpi-footer-link{
+	color: 	#ffffff !important;
+	font-size: 12px;
+}
+.jpi-footer-link:hover{
+	color: #a4884a !important;
+	font-weight: bold;
+}
+.jpi-footer-text{
+	color: 	#ffffff !important;
+	font-size: 12px;
+}
+
+.btn .btn-default .btn-lg {
+    width: 80%;
+    align-content: center;
+    margin: 10%;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+
+/*override header & body*/
+.pkp_head_wrapper .pkp_search .search_controls a {
+	margin-right: 33px;
+}
+
+.pkp_site_name > a {
+	padding-top: 0px !important;
+	padding-bottom: 0px !important;
+}
+
+.page_index_journal > .current_issue > h2 {
+	color: #E3B735 !important;
+	margin: 0px;
+
+}
+.pkp_structure_head{
+	background-color: #008DCB !important;
+}
+.pkp_navigation_primary_row{
+	background-color: #4BB62A !important;
+}
+.pkp_structure_footer_wrapper {
+    background: #00266f !important;
+}
+@media (min-width: 1200px) {
+	.pkp_structure_main {
+		width: 880px
+	}
+	.pkp_structure_main:after {
+		left: 880px
+	}
+}
+img {
+	max-width: 90%;
+	width: auto;
+	height: auto
+}
+.pkp_structure_head {
+	background-color: #062f3e;
+	border-bottom: 1px solid #ddd
+}
+.pkp_head_wrapper {
+	padding-top: 60px
+}
+.current_issue > .current_issue_title{
+	padding-top: 10px !important;
+	margin: 0px !important;
+	font-weight: bold !important;
+	color: #007ab2 !important;
+	font-size: 12px !important;
+}
+.obj_issue_toc > .heading > .published{
+	margin-top: 10px !important;
+	color: #666 !important;
+}
+/*articles section*/
+.obj_issue_toc .sections:not(:first-child) {
+	margin-top: 0px;
+}
+
+.obj_article_summary {
+	padding-bottom: 10px !important;
+	border-bottom: solid 1px #ddd !important; 
+}
+
+/*Footer Email Link*/
+.uindesc a {
+    color: #ffffff !important;
+    text-decoration: none;
+}
+.uindesc a:hover, .uindesc a:focus {
+    color: #dcbd47  !important;
+    text-decoration: none;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+}
+nav {
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  margin: /*for display only*/
+  width: 100%;
+  -webkit-box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+     -moz-box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+          box-shadow: 2px 2px 5px rgba(249, 245, 245, 0);
+}
+.menu-item {
+  background: #fff;
+  width: 260px;
+}
+/*Menu Header Styles 1*/
+.menu-item h4 {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 7px 12px;
+  background: #9DB6D7;
+}
+.menu-item h4 a {
+  color: white;
+  display: 
+  text-decoration: none;
+  width: 260px;
+}
+/*Menu Header Styles 2*/
+.menu-item h4 {
+  border-bottom: 1px solid rgba(0,0,0,0.3);
+  border-top: 1px solid rgba(255,255,255,0.2);
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 7px 12px;
+  background: #a90329; /* Old browsers */
+  background: -moz-linear-gradient(top, #a90329 0%, #8f0222 44%, #6d0019 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a90329), color-stop(44%,#8f0222), color-stop(100%,#6d0019)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #a90329 0%,#8f0222 44%,#6d0019 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #a90329 0%,#8f0222 44%,#6d0019 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #a90329 0%,#8f0222 44%,#6d0019 100%); /* IE10+ */
+  background: linear-gradient(top, #a90329 0%,#8f0222 44%,#6d0019 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#6d0019',GradientType=0 ); /* IE6-9 */
+}
+.menu-item h4:hover {
+  background: #cc002c; /* Old browsers */
+  background: -moz-linear-gradient(top,  #cc002c 0%, #6d0019 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#cc002c), color-stop(100%,#6d0019)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #cc002c 0%,#6d0019 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #cc002c 0%,#6d0019 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #cc002c 0%,#6d0019 100%); /* IE10+ */
+  background: linear-gradient(top,  #cc002c 0%,#6d0019 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc002c', endColorstr='#6d0019',GradientType=0 ); /* IE6-9 */
+}
+.alpha p {
+  font-size: 13px;
+  padding: 8px 12px;
+  color: #aaa;
+}
+/*ul Styles*/
+.menu-item ul {
+  background: #fff;
+  font-size: 13px;
+  line-height: 30px;
+  list-style-type: none;
+  overflow: scroll;
+  padding: 0px;
+}
+.menu-item ul a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #0A0A0A;
+  display: block;
+  width: 250px;
+}
+/*li Styles*/
+.menu-item li {
+  border-bottom: 1px solid #eee;
+}
+.menu-item li:hover {
+  background: #eee;
+}
+/*ul Styles*/
+.menu-item ul {
+  background: #B2D8E0;
+  font-size: 13px;
+  line-height: 30px;
+  height: 0px; /*Collapses the menu*/
+  list-style-type: none;
+  overflow: scroll;
+  padding: 0px;
+}
+/*ul Styles*/
+.menu-item ul {
+  background: #fff;
+  font-size: 13px;
+  line-height: 30px;
+  height: 0px;
+  list-style-type: none;
+  overflow: scroll;
+  padding: 0px;
+  /*Animation*/
+  -webkit-transition: height 1s ease;
+     -moz-transition: height 1s ease;
+       -o-transition: height 1s ease;
+      -ms-transition: height 1s ease;
+          transition: height 1s ease;
+}
+.menu-item:hover ul {
+  height: 115px;
+}
+.pkp_structure_head {
+  background:  #85ad90;
+ }
+ .pkp_structure_main h1 {
+     font-weight: 600;
+	 font-size: 15px;
+}
+.pkp_page_index .current_issue h2 {
+    display: inline-block;
+    padding-bottom: 0em;
+    border-bottom: 3px solid #4e9763;
+    text-transform: capitalize;
+    font-weight: 700;
+    color: rgba(0,0,0,0.54);
+}
+.pkp_page_index .current_issue .current_issue_title {
+	font-size:14px;
+}
+.obj_issue_toc .heading .published .label {
+	text-transform:capitalize;
+	font-size: 90%;
+}
+.obj_issue_toc .section h2 {
+    position: relative;
+    display: inline-block;
+    top: auto;
+    left: auto;
+    padding: 0 0 5px;
+    border-bottom: 3px solid #4e9763;
+    background: transparent;
+    text-transform: capitalize;
+    font-weight: 700;
+    padding-bottom: 0em;
+}
+/* Menu Tambahan Kanan by ade@htp.ac.id */
+
+.hoverTable{
+	width:100%;
+	border-collapse:collapse; 
+}
+.hoverTable th{
+	height:30px; background: #ffffff; color:#105183;
+}
+.hoverTable td{ 
+	height:30px; padding-top:3px;vertical-align:middle; 
+	border-bottom:1px solid #ffffff;
+	text-align:center;
+}
+.hoverTable td a{
+	width:100%;display:block;
+}
+/* warna latar setiap baris tabel dan warna tulisan */
+.hoverTable tr{
+	background: #105183; color:#ffffff;
+}
+/* warna ketika dilewati mouse */
+.hoverTable tr:hover {
+	background-color: #0c426b;
+}
+.hoverTable a {
+	color:#ffffff;
+}
+.hoverTable a:hover {
+	color:#f0850c;
+}
+/* --- Menu Tambahan Kanan by ade@htp.ac.id */
+.pkp_navigation_primary_row{
+	background-color:#4e9763;
+	text-align:left;
+    padding-left:15px;
+}
+#navigationPrimary a {
+	font-size: 13.5px;
+    color: #190202;
+    font-weight: 100;
+    text-transform: capitalize;
+}
+.pkp_head_wrapper .pkp_search .search_controls .search_prompt{
+	font-size: 13.5px;
+    color: #f2f2f2;
+    font-weight: 100;
+    text-transform: capitalize;
+}	
+.pkp_navigation_user_wrapper a {
+	font-size: 15px;
+	font-weight: 200;
+}	
+body {
+  font-family: tahoma,geneva,sans-serif;
+  background: #c4e9f3; 
+}
+body p {
+    font-family: tahoma,geneva,sans-serif;
+    font-size: 12px;
+}
+.pkp_block {
+    font-size: 14px;
+    line-height: 15px;
+    clear: both;
+    border-bottom: 1px solid #ddd;
+}
+.pkp_structure_sidebar{
+	background:#a6ecf8;
+	padding-bottom: 870px;
+}
+.pkp_block .title {
+    display: inline-block;
+    padding-bottom: 0em;
+    border-bottom: 3px solid #4e9763;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.pkp_structure_content {
+    padding-top: 0;
+	background:#a6ecf8;
+}
+.obj_article_details .abstract {
+    text-align: justify;
+	font:tahoma,geneva,sans-serif;
+}
+.obj_article_summary > .title {
+    font-size: 13.5px;
+    line-height: 20px;
+    font-weight: 100;
+}
+.pkp_site_name .is_img img {
+	display: inline-block;
+	max-height: 140px;
+	max-width: 100%;
+	width: auto;
+	height: auto;
+}
+.pkp_footer_content {
+  float: none;
+  width: 100%;
+  clear: both;
+  padding-top: 10px;  
+}
+.pkp_structure_footer_wrapper {
+	background: #85ad90;
+	border-bottom:@double solid; 
+	border-bottom-color:#438255;
+}
+.obj_galley_link {
+	font-weight: 700;
+    text-transform: Capitalize;
+    background: #4b7d92;
+    color: #fff;
+    border: none;
+}
+.cmp_breadcrumbs {
+    text-transform: capitalize;
+}
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active {
+    background: #8c8c8c;
+    border: 0px solid #3c2d61;
+}
+.pkp_structure_sidebar {
+	width: 280px
+}
+.pkp_site_name {
+    
+	text-align: left;
+
+}
+.pkp_structure_main p {
+   
+	line-height: 20px;
+
+}

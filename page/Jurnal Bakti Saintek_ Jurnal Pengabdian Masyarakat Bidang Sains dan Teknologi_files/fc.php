@@ -1,0 +1,1 @@
+sc_show_flag(1393361,'({"cts":{"ID":1555,"US":238,"RU":31,"IN":19,"HK":18,"SG":13,"TW":6,"MY":6,"EU":5,"CN":5,"GB":4,"AP":2,"JP":1,"NL":1,"VN":1,"PL":1,"CA":1,"TR":1,"DE":1},"new":"ap","you":"id","today":4,"month":60,"total":2136})');

@@ -1,0 +1,182 @@
+/**
+ * classicBlue.css
+ *
+ * Copyright (c) 2003-2012 John Willinsky
+ * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+ *
+ * Classic blue theme stylesheet.
+ *
+ * $Id$
+ */
+
+
+
+/*@import 'https://fonts.googleapis.com/css?family=Cinzel|Merriweather|Open+Sans:400,700';*/
+@import 'https://fonts.googleapis.com/css?family=EB+Garamond';
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,700italic,400italic);
+
+body {
+	/*font-family: Arial,Helvetica,sans-serif !important;*/
+	/*font-size: 2rem;*/
+}
+
+#body{
+	/*padding: .3rem;				/*boder untuk body layout*/
+	box-shadow: 0px 2px 5px -2px rgba(51,51,51,1);
+	font-family:'Open Sans',sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: Arial,Helvetica,sans-serif !important;
+	margin-top: 1rem !important;
+}
+
+p{
+	text-align: justify;
+  	text-justify: inter-word;
+}
+
+
+
+#homepageImage {
+	float: left;
+	width: 30%;
+	margin-top: -1em;
+	margin-left: 45px;
+	margin-bottom: 12px;
+	text-align: left;
+}
+
+#homepageImage img {
+	/*transform: translateY(-50px);*/
+	display: inline-block;
+	max-width: 250px;
+	height: auto;
+}
+
+#header{
+	margin:0;
+	padding:0;
+	background-color:#000000;
+	/*background-image:url(../../../../files/journals/67/theme/nasty_fabric.png);	/*mengganti background gambar*/
+	min-height:40px;
+}
+
+#headerTitle{
+	width:1020px;
+	margin:0 auto;
+	display:inline-block
+}
+
+#headerTitle img {
+	float: left;
+	display: inline-block;
+	margin-top: auto;
+	margin-bottom: 25px;
+	max-width: 1050px;
+	height: auto;
+}
+
+#header h1{
+	margin-top:0 !important;
+	text-transform: uppercase;
+	font-size: 4em;
+	font-family: Arial,Helvetica,sans-serif !important;
+	text-align: center;
+}
+
+#container{
+	margin: 0 auto;
+	padding: 0;
+	width: auto;
+	min-width: 1020px !important;
+	width: 100% !important;
+	/*background:url(../../../../files/journals/67/theme/nasty_fabric.png);		/*mengganti background gambar*/
+	background-color: white;
+	display: inline-block;
+}
+
+#navbar{
+	/*untuk warna menu bar*/
+	background-color: #ffffff;		/*untuk warna menu bar*/
+	1px dotted #006699; text-align: left;
+}
+
+#navbar a, #navbar a:link, #navbar a:visited {
+	/*font-family: Verdana,Arial,Helvetica,sans-serif !uppercase;*/
+	font-family: Arial,Helvetica,sans-serif,uppercase!;
+	text-transform: none;
+	font-size: 1rem!important;
+}
+
+#navbar a:hover {
+	background-color: #9B67A5;		/*untuk warna menu bar ketika pointer mouse mengarah ke menu*/
+}
+
+#link a:active,a:link,a:visited{
+	color:#0a46a8;				/*untuk warna tulisan yang berisi link*/
+	text-decoration:none
+}
+
+ul.sidemenu{
+	margin-top: -12px;
+	padding-center: 0px !important;
+}
+
+ul.sidemenu.full{
+	margin: -12px -12px 0 -12px;
+}
+
+ul.sidemenu li:before{
+	display: none;
+}
+
+ul.sidemenu li{
+	padding: 0;
+}
+
+ul.sidemenu li:first-child a{
+	border-top:1px solid #D28C5A		/*untuk warna pembatas menu paling atas dengan menu nav*/
+}
+
+ul.sidemenu li a{
+	display: block;
+	padding: 0.7em 12px 0.7em 12px;
+	border-bottom: 1px solid #3C1900;	/*untuk warna garis sidemenu*/
+	background-color: #eee;		/*untuk warna background sidemenu*/
+	text-decoration: none;
+	color:#222;				/*untuk warna tulisan sidemenu*/
+}
+
+ul.sidemenu li a:hover {
+	background-color: #cfc;		/*untuk warna sidemenu ketika pointer mouse mengarah ke menu*/
+	text-decoration: underline;
+}
+
+.block li:before {
+  content: ;
+  border-color: transparent #7b3489;		/*untuk warna format bulleting*/
+  border-style: solid;
+  border-width: 0.35em 0 0.35em 0.45em;
+  display: block;
+  height: 0;
+  width: 0;
+  left: -1em;
+  top: 0.9em;
+  position: relative;
+}
+
+
+#leftSidebar div.block span.blockTitle, #rightSidebar div.block span.blockTitle {	
+	font-family: Arial,Helvetica,sans-serif !important;text-align: center;
+	background-color: #000000;		/*untuk warna menu block*/
+	color: #ffffff;
+	box-shadow: 0px 2px 5px -2px rgba(51,51,51,1);
+}
+
+#issueCoverImage img {
+	display: block;
+	border: 0;
+	max-width: 500px;
+	height: auto;
+}

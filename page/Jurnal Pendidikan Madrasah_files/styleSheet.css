@@ -1,0 +1,150 @@
+/*
+* Custom CSS For JPI Journal
+* Version : 1.0.1
+* 
+*/
+
+/*"Indexed by" thumbnail images*/
+.img-indexby {
+	height: 57px !important;
+    margin: 5px;
+    padding: 5px;
+    border: solid 1px #dddddd;
+    margin-bottom: -20px;
+}
+.img-indexby:hover {
+  -webkit-box-shadow: 0px 0px 5px 3px rgba(255,148,33,1);
+  -moz-box-shadow: 0px 0px 5px 3px rgba(255,148,33,1);
+  box-shadow: 0px 0px 5px 3px rgba(255,148,33,1);
+}
+
+/*Sidebar Link colors*/
+.sidebar-link{
+	color: 	#666666;
+}
+.sidebar-link:hover{
+	color: #007ab2;
+}
+
+/*Sidebar Link's title*/
+.sidebar-link-title{
+	color: #666666;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: solid 1px #ddd;
+    padding-bottom: 10px;
+}
+
+/*Sidebar box*/
+.sidebar-box{
+    background-color: #ffffff;
+    padding: 20px;
+    border: solid 1px #dddddd;	
+}
+.sidebar-box-issn{
+    background-color: #ffffff;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    color: #ab4242;
+    margin-bottom: 15px;
+    border: solid 1px #dddddd;
+}
+.sidebar-box-white{
+	background-color: #ffffff;
+	border-radius: 5px;
+	padding:10px;	
+	color: #666666;
+	font-size: 11px;
+}
+.sidebar-box-text-desc{
+	line-height: 18px !important;
+	font-size: 11px;
+}
+.sidebar-box-title{
+	color: #666666;
+	font-weight: bold;
+	text-align: center;
+}
+
+/*Override nav menu from head.less*/
+.has_site_logo .pkp_head_wrapper {
+	width: 100% !important;
+}
+.pkp_block .block_custom {
+	margin-top: -30px !important;
+} 
+.pkp_block a {
+    text-decoration: none;
+    padding: 5px;
+}
+/*Footer Link*/
+.jpi-footer-link{
+	color: 	#ffffff !important;
+	font-size: 12px;
+}
+.jpi-footer-link:hover{
+	color: #a4884a !important;
+	font-weight: bold;
+}
+.jpi-footer-text{
+	color: 	#ffffff !important;
+	font-size: 12px;
+}
+
+.btn .btn-default .btn-lg {
+    width: 80%;
+    align-content: center;
+    margin: 10%;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+
+/*override header & body*/
+.pkp_head_wrapper .pkp_search .search_controls a {
+	margin-right: 33px;
+}
+
+.pkp_site_name > a {
+	padding-top: 0px !important;
+	padding-bottom: 0px !important;
+}
+
+.page_index_journal > .current_issue > h2 {
+	color: #a4884a !important;
+	margin: 0px;
+
+}
+.current_issue > .current_issue_title{
+	padding-top: 10px !important;
+	margin: 0px !important;
+	font-weight: bold !important;
+	color: #007ab2 !important;
+	font-size: 20px !important;
+}
+.obj_issue_toc > .heading > .published{
+	margin-top: 10px !important;
+	color: #666 !important;
+}
+/*articles section*/
+.obj_issue_toc .sections:not(:first-child) {
+	margin-top: 0px;
+}
+
+.obj_article_summary {
+	padding-bottom: 10px !important;
+	border-bottom: solid 1px #ddd !important; 
+}
+
+/*Footer Email Link*/
+.uindesc a {
+    color: #ffffff !important;
+    text-decoration: none;
+}
+.uindesc a:hover, .uindesc a:focus {
+    color: #dca007  !important;
+    text-decoration: none;
+}

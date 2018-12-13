@@ -1,0 +1,16 @@
+ul.menu > li > A {
+	padding: 10px 10px 6.5px 10px;
+	font-weight: 600;
+}
+
+ul.menu > li > A:hover, ul.menu > li > A:hover {
+	font-weight: 1000;
+}
+
+ul.menu > li, ul.menu li {
+	padding: 0px;
+}
+
+#headerTitle {
+	    background: #4c6644 !important
+}

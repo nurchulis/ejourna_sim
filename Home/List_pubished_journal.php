@@ -41,7 +41,7 @@ $journal = mysqli_query($mysqli, "SELECT * FROM journal where id_publisher='".$i
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Modal Header</h4>
+          <h4 class="modal-title">Edit Journal</h4>
         </div>
         <div class="modal-body">
    <form method="POST" action="Home/Proses/Update_journal.php" enctype="multipart/form-data">

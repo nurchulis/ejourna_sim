@@ -1,0 +1,393 @@
+/*
+* Custom CSS For JPI Journal
+* Version : 1.0.1
+* 
+*/
+
+/*"Indexed by" thumbnail images*/
+.img-indexby {
+	height: 57px !important;
+    margin: 5px;
+    padding: 5px;
+    border: solid 1px #dddddd;
+    margin-bottom: -20px;
+}
+.img-indexby:hover {
+  -webkit-box-shadow: 0px 0px 5px 3px rgba(255,148,33,1);
+  -moz-box-shadow: 0px 0px 5px 3px rgba(255,148,33,1);
+  box-shadow: 0px 0px 5px 3px rgba(255,148,33,1);
+}
+
+/*Sidebar Link colors*/
+.sidebar-link{
+	color: 	#666666;
+}
+.sidebar-link:hover{
+	color: #007ab2;
+}
+
+/*Sidebar Link's title*/
+.sidebar-link-title{
+	color: #666666;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: solid 1px #ddd;
+    padding-bottom: 10px;
+}
+
+/*Sidebar box*/
+.sidebar-box{
+    background-color: #ffffff;
+    padding: 20px;
+    border: solid 1px #dddddd;	
+}
+.sidebar-box-issn{
+    background-color: #ffffff;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    color: #ab4242;
+    margin-bottom: 15px;
+    border: solid 1px #dddddd;
+}
+.sidebar-box-white{
+	background-color: #ffffff;
+	border-radius: 5px;
+	padding:10px;	
+	color: #666666;
+	font-size: 11px;
+}
+.sidebar-box-text-desc{
+	line-height: 18px !important;
+	font-size: 11px;
+}
+.sidebar-box-title{
+	color: #666666;
+	font-weight: bold;
+	text-align: center;
+}
+
+/*Override nav menu from head.less*/
+.has_site_logo .pkp_head_wrapper {
+	width: 100% !important;
+}
+.pkp_block .block_custom {
+	margin-top: -30px !important;
+}
+.pkp_block {
+    padding: 5px 30px;
+} 
+.pkp_block a {
+    text-decoration: none;
+    padding: 5px;
+}
+/*Footer Link*/
+.jpi-footer-link{
+	color: 	#ffffff !important;
+	font-size: 12px;
+}
+.jpi-footer-link:hover{
+	color: #a4884a !important;
+	font-weight: bold;
+}
+.jpi-footer-text{
+	color: 	#ffffff !important;
+	font-size: 12px;
+}
+
+.btn .btn-default .btn-lg {
+    width: 80%;
+    align-content: center;
+    margin: 10%;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+
+/*override header & body*/
+.pkp_head_wrapper .pkp_search .search_controls a {
+	margin-right: 33px;
+}
+
+.pkp_site_name > a {
+	padding-top: 0px !important;
+	padding-bottom: 0px !important;
+}
+
+.page_index_journal > .current_issue > h2 {
+	color: #E3B735 !important;
+	margin: 0px;
+
+}
+.pkp_structure_head{
+	background-color:#5b0602 !important;
+}
+.pkp_navigation_primary_row{
+	background-color: #a4884a !important;
+}
+.pkp_structure_footer_wrapper {
+    background: #350106 !important;
+}
+
+.current_issue > .current_issue_title{
+	padding-top: 10px !important;
+	margin: 0px !important;
+	font-weight: bold !important;
+	color: #00693e !important;
+	font-size: 20px !important;
+}
+.obj_issue_toc > .heading > .published{
+	margin-top: 10px !important;
+	color: #666 !important;
+}
+/*articles section*/
+.obj_issue_toc .sections:not(:first-child) {
+	margin-top: 0px;
+}
+
+.obj_article_summary {
+	padding-bottom: 10px !important;
+	border-bottom: solid 1px #ddd !important; 
+}
+.pkp_nav_list ul a:hover, .pkp_nav_list ul a:focus {
+    border-color: #00693e;
+}
+.pkp_navigation_primary ul a {
+    color: #00693e;
+}
+.pkp_navigation_primary [aria-haspopup] ul a:focus, .pkp_navigation_primary [aria-haspopup] ul a:hover {
+    border-color: #00693e;
+}
+
+@media (min-width: 992px){
+	.pkp_head_wrapper .pkp_search.is_open .search_prompt {
+	    color: #00693e;
+	}
+}
+.pkp_head_wrapper .pkp_search.is_open .search_prompt:hover, .pkp_head_wrapper .pkp_search.is_open .search_prompt:focus {
+    border-bottom-color: #00693e;
+}
+.page_search .submit button:after {
+    background: #00693e;
+}
+
+/*content*/
+a {
+	color: #0c8e59;
+}
+a:hover, a:focus {
+	color: #b9a332;
+}
+.obj_announcement_summary .read_more {
+	color: #00693e !important;
+}
+.obj_announcement_summary .read_more:hover, .obj_announcement_summary .read_more:focus {
+	color: #009c5d !important;
+}
+.cmp_button_wire, .obj_galley_link {
+	border: 1px solid #00693e !important;
+	color: #00693e !important;
+}
+.cmp_button_wire:hover, .cmp_button_wire:focus, .obj_galley_link:hover, .obj_galley_link:focus {
+    background: #076d4a !important;
+    color: #fff !important;
+}
+.cmp_button, .cmp_form .buttons button, .pkp_head_wrapper .pkp_search button, .page_lost_password .buttons button, .page_search .submit button, .obj_article_details .citation_display form input[type="submit"], .block_make_submission a {
+	color: #00693e !important;
+}
+
+
+/*link footer*/
+.uindesc a {
+    color: #f5dd97 !important;
+    text-decoration: none;
+}
+.uindesc a:hover, .uindesc a:focus {
+    color: #e5a000  !important;
+    text-decoration: none;
+}
+/* Root = Vertical, Secondary = Vertical */
+ul#navmenu,
+ul#navmenu li,
+ul#navmenu ul {
+    margin: 0;
+    border: 0 none;
+    padding: 0;
+    width: 240px; /*For KHTML*/
+    list-style: none;
+    }
+
+ul#navmenu:after /*From IE 7 lack of compliance*/{
+    clear: both;
+    display: block;
+    font: 1px/0px serif;
+    content: ".";
+    height: 0;
+    visibility: hidden;
+    }
+
+ul#navmenu li {
+    float: left; /*For IE 7 lack of compliance*/
+    display: block !important; /*For GOOD browsers*/
+    display: inline; /*For IE*/
+    position: relative;
+    }
+
+/* Root Menu */
+ul#navmenu a {
+    border: 1px solid #000;
+    border-right-color: #CCC;
+    border-bottom-color: #CCC;
+    padding: 0 6px;
+    display: block;
+    background: #111;
+    color: #21a1d2;
+    font: bold 10px/22px Verdana, Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    height: auto !important;
+    height: 1%; /*For IE*/
+    }
+
+/* Root Menu Hover Persistence */
+ul#navmenu a:hover,
+ul#navmenu li:hover a,
+ul#navmenu li.iehover a {
+    background: #000;
+    color: #ef520d;
+    }
+
+/* 2nd Menu */
+ul#navmenu li:hover li a,
+ul#navmenu li.iehover li a {
+    background: #111;
+    color: #21a1d2;
+    }
+
+/* 2nd Menu Hover Persistence */
+ul#navmenu li:hover li a:hover,
+ul#navmenu li:hover li:hover a,
+ul#navmenu li.iehover li a:hover,
+ul#navmenu li.iehover li.iehover a {
+    background: #000;
+    color: #ef520d;
+    }
+
+/* 3rd Menu */
+ul#navmenu li:hover li:hover li a,
+ul#navmenu li.iehover li.iehover li a {
+    background: #111;
+    color: #21a1d2;
+    }
+
+/* 3rd Menu Hover Persistence */
+ul#navmenu li:hover li:hover li a:hover,
+ul#navmenu li:hover li:hover li:hover a,
+ul#navmenu li.iehover li.iehover li a:hover,
+ul#navmenu li.iehover li.iehover li.iehover a {
+    background: #000;
+    color: #ef520d;
+    }
+
+/* 4th Menu */
+ul#navmenu li:hover li:hover li:hover li a,
+ul#navmenu li.iehover li.iehover li.iehover li a {
+    background: #111;
+    color: #666;
+    }
+
+/* 4th Menu Hover */
+ul#navmenu li:hover li:hover li:hover li a:hover,
+ul#navmenu li.iehover li.iehover li.iehover li a:hover {
+    background: #000;
+    color: #ef520d;
+    }
+
+ul#navmenu ul,
+ul#navmenu ul ul,
+ul#navmenu ul ul ul {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 240px;
+    }
+
+/* Do Not Move - Must Come Before display:block for Gecko */
+ul#navmenu li:hover ul ul,
+ul#navmenu li:hover ul ul ul,
+ul#navmenu li.iehover ul ul,
+ul#navmenu li.iehover ul ul ul {
+    display: none;
+    }
+
+ul#navmenu li:hover ul,
+ul#navmenu ul li:hover ul,
+ul#navmenu ul ul li:hover ul,
+ul#navmenu li.iehover ul,
+ul#navmenu ul li.iehover ul,
+ul#navmenu ul ul li.iehover ul {
+    display: block;
+    }
+.obj_article_details .abstract {
+    text-align: justify;
+    }
+.block_make_submission a {
+    
+    display: inline-block;
+
+    padding: 0 1em;
+
+    background: #eee;
+
+    border: 1px solid rgba(0,0,0,0.4);
+
+    border-top-color: rgba(0, 0, 0, 0.4);
+
+    border-top-color: #bbb;
+
+    border-radius: 3px;
+
+    box-shadow: inset 0 -1em 1em rgba(0,0,0,0.1);
+
+    font-size: 13px;
+
+    line-height: 28px;
+
+    font-weight: 700;
+
+    color: #007ab2;
+
+    width: 240px;
+
+    text-align: center;
+    }
+
+.pkp_footer_content {
+
+    float: none;
+
+    width: 100%;
+
+    clear: both;
+
+    padding-top: 10px;
+
+    }
+
+.pkp_footer_content {
+
+    padding: 0px;
+    padding-top: 0px;
+
+    text-align: left;
+
+    }
+
+* {
+
+    margin: 0px;
+
+    padding: 0px;
+
+}

@@ -1,0 +1,28 @@
+@media all{}
+.endmenu{clear: right;}
+.navmenu + *{clear: right;}
+.navmenu > li{float: right;}
+.navmenu > li > ul > li {width:175px;}
+.navmenu a{display: block;width: 100%;}
+.navmenu li.hover{display: block;}
+.navmenu li:hover > ul{display: block;}
+.navmenu li{display: block; float: right; list-style-type: none; display: block; position: relative;}
+.navmenu span{display: block;}
+.navmenu ul ul{/* top: 0; --- remove this*/margin-top: -.2em;right: 100%;}
+.navmenu ul ul{top: 0;right: 100%;}
+.navmenu ul.parent_hover{display: block;}
+.navmenu ul{display: none;margin-top: 2px;position: absolute;}
+.navmenu{float: right; width: 100%;margin-top:0;}
+#navbar {
+	position: absolute;
+	right: 0;
+	top: 5px;
+	height: 22px;
+	width: 60%;
+	text-align: left;
+	line-height: normal;
+	border:1px transparent;
+	}
+#header {
+	margin-top: 5px;
+}
